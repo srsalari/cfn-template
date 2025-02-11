@@ -2,22 +2,28 @@ Parameters:
   VpcID:
     Description: Enter your VPC ID
     Type: String
+    default: vpc-0481a6fc3f330f41b
 
   EC2SGName:
     Description: Enter your EC2 SG Name
     Type: String
+    default: Public-EC2-SG
+
 
   ALBSGName:
     Description: Enter your ALB SG Name
     Type: String
+    default: Public-ALB-SG
   
   LaunchTemplateName:
     Description: Enter your EC2 Launch Template Name
     Type: String
+    default: Public-EC2-LT
   
   AMIID:
     Description: Enter your EC2 AMI ID
     Type: String
+    
 
   InstanceType:
     Description: Enter t2.micro, m1.small, or m1.large. Default is t2.micro.
@@ -31,25 +37,30 @@ Parameters:
   TargetGroupName:
     Description: Enter your ALB TargetGroupName
     Type: String
+    default: Public-ALB-TG
   
   TargetGroupPort:
     Description: Enter your ALB Targets Port
     Type: Number
+    Default: 80
 
   ALBName:
     Description: Enter your ALB Name
     Type: String
+    default: Public-ALB
   
   ALBScheme:
     Description: Define your Public or Private Scheme for Load Balancer
     Type: String
+    default: internet-facing
     AllowedValues:
       - internet-facing
       - internal
 
   SubnetID1:
     Description: Enter your AZ1 SubnetID
-    Type: String
+    Type: String 
+    
   
   SubnetID2:
     Description: Enter your AZ2 SubnetID
@@ -58,6 +69,7 @@ Parameters:
   LBType:
     Description: Define your Load Balancer Type
     Type: String
+    default: application
     AllowedValues:
       - application
       - network
@@ -65,6 +77,8 @@ Parameters:
   ASGName:
     Description: Enter your ASG Name
     Type: String
+    default: Public-ASG
+
   
   ASGMinValue:
     Description: Enter your Min Size of ASG
@@ -77,7 +91,7 @@ Parameters:
   ASGScalingThreshold:
     Description: Enter your CPU Utilization Threshold
     Type: String
-    Default: 50.0
+    Default: 60.0
 
 
 Resources:
