@@ -2,28 +2,28 @@ Parameters:
   VpcID:
     Description: Enter your VPC ID
     Type: String
-    default: vpc-0481a6fc3f330f41b
+    Default: vpc-0481a6fc3f330f41b
 
   EC2SGName:
     Description: Enter your EC2 SG Name
     Type: String
-    default: Public-EC2-SG
+    Default: Public-EC2-SG
 
 
   ALBSGName:
     Description: Enter your ALB SG Name
     Type: String
-    default: Public-ALB-SG
+    Default: Public-ALB-SG
   
   LaunchTemplateName:
     Description: Enter your EC2 Launch Template Name
     Type: String
-    default: Public-EC2-LT
+    Default: Public-EC2-LT
   
   AMIID:
     Description: Enter your EC2 AMI ID
     Type: String
-    default: ami-0db18496905e01e3d
+    Default: ami-0db18496905e01e3d
     
 
   InstanceType:
@@ -38,22 +38,22 @@ Parameters:
   TargetGroupName:
     Description: Enter your ALB TargetGroupName
     Type: String
-    default: Public-ALB-TG
+    Default: Public-ALB-TG
   
   TargetGroupPort:
     Description: Enter your ALB Targets Port
     Type: Number
-    default: 80
+    Default: 80
 
   ALBName:
     Description: Enter your ALB Name
     Type: String
-    default: Public-ALB
+    Default: Public-ALB
   
   ALBScheme:
     Description: Define your Public or Private Scheme for Load Balancer
     Type: String
-    default: internet-facing
+    Default: internet-facing
     AllowedValues:
       - internet-facing
       - internal
@@ -61,18 +61,18 @@ Parameters:
   SubnetID1:
     Description: Enter your AZ1 SubnetID
     Type: String
-    default: subnet-0f3429fb1a2c6603a 
+    Default: subnet-0f3429fb1a2c6603a 
     
   
   SubnetID2:
     Description: Enter your AZ2 SubnetID
     Type: String
-    default: subnet-0e1b999d8178296a9
+    Default: subnet-0e1b999d8178296a9
 
   LBType:
     Description: Define your Load Balancer Type
     Type: String
-    default: application
+    Default: application
     AllowedValues:
       - application
       - network
@@ -80,23 +80,23 @@ Parameters:
   ASGName:
     Description: Enter your ASG Name
     Type: String
-    default: Public-ASG
+    Default: Public-ASG
 
   
   ASGMinValue:
     Description: Enter your Min Size of ASG
     Type: String
-    default: 2
+    Default: 2
 
   ASGMaxValue:
     Description: Enter your Max Size of ASG
     Type: String
-    default: 4
+    Default: 4
 
   ASGScalingThreshold:
     Description: Enter your CPU Utilization Threshold
     Type: String
-    default: 60.0
+    Default: 60.0
 
 
 Resources:
