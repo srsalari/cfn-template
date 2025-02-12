@@ -23,6 +23,7 @@ Parameters:
   AMIID:
     Description: Enter your EC2 AMI ID
     Type: String
+    default: ami-0db18496905e01e3d
     
 
   InstanceType:
@@ -59,12 +60,14 @@ Parameters:
 
   SubnetID1:
     Description: Enter your AZ1 SubnetID
-    Type: String 
+    Type: String
+    default: subnet-0f3429fb1a2c6603a 
     
   
   SubnetID2:
     Description: Enter your AZ2 SubnetID
     Type: String
+    default: subnet-0e1b999d8178296a9
 
   LBType:
     Description: Define your Load Balancer Type
@@ -83,10 +86,12 @@ Parameters:
   ASGMinValue:
     Description: Enter your Min Size of ASG
     Type: String
+    Default: 2
 
   ASGMaxValue:
     Description: Enter your Max Size of ASG
     Type: String
+    Default: 4
 
   ASGScalingThreshold:
     Description: Enter your CPU Utilization Threshold
