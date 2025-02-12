@@ -43,7 +43,7 @@ Parameters:
   TargetGroupPort:
     Description: Enter your ALB Targets Port
     Type: Number
-    Default: 80
+    default: 80
 
   ALBName:
     Description: Enter your ALB Name
@@ -86,17 +86,17 @@ Parameters:
   ASGMinValue:
     Description: Enter your Min Size of ASG
     Type: String
-    Default: 2
+    default: 2
 
   ASGMaxValue:
     Description: Enter your Max Size of ASG
     Type: String
-    Default: 4
+    default: 4
 
   ASGScalingThreshold:
     Description: Enter your CPU Utilization Threshold
     Type: String
-    Default: 60.0
+    default: 60.0
 
 
 Resources:
